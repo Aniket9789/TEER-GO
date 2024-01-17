@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/image/TG.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Teer-GO</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid" style="height: 4rem;">
+            <a class="navbar-brand" href="#"><img src="/image/logo.png" alt="" class="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="items">
+                <ul class="Navdetails">
+                    <li><a href="#"><i class='bx bxs-offer' style='width: 30px; height: 30px;'></i>
+                        </a></li>
+                    <li><a href="#"><i class='bx bxs-bell'></i></a></li>
+                    <li><a href="#">My Bookings</a> <i class='bx bxs-chevron-down'></i></li>
+                    <li><a href="#">Manage Bookings</a> <i class='bx bx-user'></i><i class='bx bxs-chevron-down'></i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        </div>
+    </nav>
+
+    <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/image/bus.jpeg" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <!-- <h5>First slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p> -->
+                </div>
+            </div>
+            <div class="carousel-item active">
+                <img src="https://cdn.nuego.co.in/greencell/assets/images/Bus-illustration.png" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="/image//bus.jpeg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+            </div>
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div class="inputdetails">
+        <div class="firstinput">
+            <div class="inputimages">
+                <img src="/image/arrow.png" alt="" class="arrow" />
+                <img src="/image//ciecle2.jpg" alt="" class="circle" />
+                <img src="/image//location2.jpg" alt="" class="location" />
+                <img src="/image//calender.jpg" alt="" class="calenderimg" />
+                <img src="/image//persion.jpg" alt="" class="persionimg" />
+            </div>
+            <div class="input">
+                <input type="text" pattern="[A-Za-z]" placeholder="Enter Departure" class="start-location" value />
+            </div>
+            <div class="input2">
+                <input type="text" pattern="[A-Za-z]" placeholder="Enter Destination" class="end-location" value />
+            </div>
+            <div class="date">
+                <div class="customdetails">
+                    <img src="" alt="" />
+                    <input type="input" readonly class="calender" value="18-01-2024" />
+                    <div class="selectdate">
+                        <div class="Today">Today</div>
+                        <div class="Tomorrow">Tomorrow</div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="counter">
+                    <button id="increment-btn">+</button>
+                    <div id="counter-value">0</div>
+                    <button id="decrement-btn">-</button>
+                </div>
+            </div>
+            <div class="searchbar">
+                <i class='bx bx-search'></i>
+                Search Buses
+            </div>
+        </div>
+    </div>
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/image/down1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="/image/down2.jpg" class="d-block w-100" alt="...">
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- ////////////////// -->
+
+    <!-- offers  -->
+
+    <div class="offers">
+        <div class="offersimage">
+            <img src="/image//offers.jpg" alt="">
+        </div>
+    </div>
+
+    <!-- /////////////////// -->
+    <!-- routes -->
+
+
+    <div class="routes">
+        <div class="routesdetails">
+            <h1 class="routeheading"><img src="/image//location3.jpg" alt=""> Our Routes</h1>
+            <p class="routepera">Explore the new routes launched in 2024</p>
+        </div>
+        <div class="buttons">
+            <img src="/image/butons.jpg" alt="">
+        </div>
+    </div>
+    <div class="places">
+        <div class="places-image">
+            <a href="#"><img src="/image/rishikesh.jpg" alt=""></a>
+            <a href="#"><img src="/image/chandigar.jpg" alt=""></a>
+            <a href="#"><img src="/image/agra.jpg" alt=""></a>
+            <a href="#"><img src="/image/jaipur.jpg" alt=""></a>
+        </div>
+    </div>
+    <hr>
+
+    <div class="saftey">
+        <h1><img src="/image//right.jpg" alt=""> TeerGo Saftey</h1>
+        <div class="saftey-image">
+            <a href="#"><img src="/image/saftey1.png" alt=""></a>
+            <a href="#"><img src="/image/saftey2.png" alt=""></a>
+            <a href="#"><img src="/image/saftey3.png" alt=""></a>
+            <a href="#"><img src="/image/saftey4.png" alt=""></a>
+            <a href="#"><img src="/image/saftey5.png" alt=""></a>
+            <a href="#"><img src="/image/safteybus.png" alt=""></a>
+        </div>
+    </div>
+    <div class="why">
+        <h1><img src="/image//location3.jpg" alt="">Why TeerGo</h1>
+        <div class="why-saftey">
+            <a href="#"><img src="/image/Mobilesaftey.png" alt=""></a>
+            <a href="#"><img src="/image/emmision.png" alt=""></a>
+            <a href="#"><img src="/image/noiseless.png" alt=""></a>
+            <a href="#"><img src="/image/benefits.png" alt=""></a>
+
+        </div>
+    </div>
+
+    <div class="lounge">
+        <div class="lounge-images">
+            <img src="/image/banner1.jpeg" alt="">
+        </div>
+    </div>
+    <div class="popular">
+        <div class="popular-images">
+            <img src="/image/popular.jpg" alt="">
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <!-- /////// -->
+
+
+    <!-- <footer></footer> -->
+
+
+
+    <footer class="new_footer_area bg_color">
+        <div class="new_footer_top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="f_widget company_widget wow fadeInLeft" data-wow-delay="0.2s"
+                            style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft;">
+                            <h3 class="f-title f_600 t_color f_size_18">Get in Touch</h3>
+                            <p>Don’t miss any updates of our new templates and extensions.!</p>
+                            <form action="#" class="f_subscribe_two mailchimp" method="post" novalidate="true"
+                                _lpchecked="1">
+                                <input type="text" name="EMAIL" class="form-control memail" placeholder="Email">
+                                <button class="btn btn_get btn_get_two" type="submit">Subscribe</button>
+                                <p class="mchimp-errmessage" style="display: none;"></p>
+                                <p class="mchimp-sucmessage" style="display: none;"></p>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.4s"
+                            style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInLeft;">
+                            <h3 class="f-title f_600 t_color f_size_18">Download</h3>
+                            <ul class="list-unstyled f_list">
+                                <li><a href="#">Company</a></li>
+                                <li><a href="#">Android App</a></li>
+                                <li><a href="#">ios App</a></li>
+                                <li><a href="#">Desktop</a></li>
+                                <li><a href="#">Projects</a></li>
+                                <li><a href="#">My tasks</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.6s"
+                            style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInLeft;">
+                            <h3 class="f-title f_600 t_color f_size_18">Help</h3>
+                            <ul class="list-unstyled f_list">
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">Term &amp; conditions</a></li>
+                                <li><a href="#">Reporting</a></li>
+                                <li><a href="#">Documentation</a></li>
+                                <li><a href="#">Support Policy</a></li>
+                                <li><a href="#">Privacy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="f_widget social-widget pl_70 wow fadeInLeft" data-wow-delay="0.8s"
+                            style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInLeft;">
+                            <h3 class="f-title f_600 t_color f_size_18">Team Solutions</h3>
+                            <div class="f_social_icon">
+                                <a href="#" class="fab fa-facebook"><i class='bx bxl-facebook'></i></a>
+                                <a href="#" class="fab fa-twitter"><i class='bx bxl-twitter'></i></a>
+                                <a href="#" class="fab fa-linkedin"><i class='bx bxl-linkedin'></i></a>
+                                <a href="#" class="fab fa-instagram"><i class='bx bxl-instagram'></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_bg">
+                <div class="footer_bg_one"></div>
+                <div class="footer_bg_two"></div>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-sm-7">
+                        <p class="mb-0 f_400">© Teer-GO Inc.. 2024 All rights reserved.</p>
+                    </div>
+                    <div class="col-lg-6 col-sm-5 text-right">
+                        <p>Made with <i class="icon_heart"></i> in <a href="http://cakecounter.com"
+                                target="_blank">Teer-Go</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</body>
+
+</html>
